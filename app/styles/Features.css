@@ -1,0 +1,52 @@
+.featureContainer{
+    
+}
+
+.featureHeadText{
+    color: #FF7A00;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.featureNo{
+    color: #3B3838;
+font-size: 72px;
+line-height: 1;
+font-weight: 700;
+
+}
+.featureTitle{
+    color: #3B3838;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.featureDesc{
+    color: #3B3838;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.featureContent{
+    width: 300px;
+    text-align: start;
+    margin-top: 2.5rem;
+
+}
+
+.imgContainer{
+    width: 500px;
+    height: 300px;
+}
