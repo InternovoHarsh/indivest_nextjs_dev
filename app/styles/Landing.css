@@ -1,8 +1,5 @@
 .landing {
-    /* margin-top: 8%; */
-    /* background: lightblue; */
     margin: 5rem auto;
-    background-color: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
     padding: 2rem ;
     
   }
@@ -30,24 +27,45 @@
     margin: 0 auto;
     border-radius: 50%;
     overflow: hidden;
-    background: #fff;
+
+    z-index: -1;
   }
-  .avatar-container.active {
-    /* position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    border-radius: 50%;
-    overflow: hidden; */
-    background: green;
-  }
+
   
   .avatar {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    z-index: 100;
   }
   
+  .avatar-smile {
+    position:absolute;
+    z-index:1000;
+    width: 90px;
+    bottom:10%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    z-index: 105;
+  }
+
+
+  .ray-background {
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+    left: 50%; 
+    transform: translate(-50%, 0); 
+    object-fit:contain;
+  }
+  
+  .ray-background img {
+    width: 100%; 
+
+    height: auto; 
+  }
   .eye-container {
     position: absolute;
     top: 38%;
@@ -55,6 +73,7 @@
     transform: translate(-50%, -50%);
     display: flex;
     gap: 27px;
+    z-index: 100;
   }
   
   .eye {
@@ -70,8 +89,8 @@
   }
   
   .pupil {
-    width: 15px;
-    height: 15px;
+    width: 11px;
+    height: 11px;
     background-color: #000;
     border-radius: 50%;
     position: absolute;
@@ -84,7 +103,7 @@
     background-color: #28a745;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 35px;
     cursor: pointer;
   }
   

@@ -6,12 +6,10 @@
   z-index: 1000;
   padding: 1.25rem;
   transition: background-color 0.3s ease;
-  color: #3B3838;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-background: #fff;
+  color: #0D0D0D;
+  font-size: 16px;
+  font-weight: 400;
+  background: #fff;
 }
 
 .navContainer.scrolled {
