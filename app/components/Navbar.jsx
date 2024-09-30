@@ -23,6 +23,7 @@ const Navbar = () => {
 
   return (
     <header className={`navContainer ${scroll ? "scrolled" : ""}`}>
+      <div className="nav">
       <nav className={`nav-links-pc `}>
         <Link href="/" onClick={closeNavbar}>
           <Image
@@ -100,6 +101,7 @@ const Navbar = () => {
           </div>
         </nav>
       </nav>
+      </div>
     </header>
   );
 };

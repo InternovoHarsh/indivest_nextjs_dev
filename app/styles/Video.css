@@ -1,0 +1,59 @@
+.featureHeadText {
+    color: #ff7a00;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  
+  .videoBox {
+    width: 800px;
+    height: 400px;
+    background-color: grey;
+    display: flex;
+    gap: 1px;
+    transition: all 0.5s ease; /* Smooth transition */
+  }
+  .videoBox.active {
+
+    gap: 0px;
+
+  }
+  
+  .video {
+    position: relative;
+    flex-grow: 1; /* All videos start with equal space */
+    flex-basis: 0; /* Ensure equal distribution of space */
+    background-color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .video.active {
+    flex-grow: 9999; /* Active video expands to take up all available space */
+  }
+  
+  .video:not(.active) {
+    flex-grow: 1; /* Non-active videos shrink, but remain visible */
+  }
+  
+  /* Dropdown styling */
+  .dropdown {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10; /* Ensure the dropdown appears above other elements */
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .dropdown select {
+    padding: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  

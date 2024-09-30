@@ -6,16 +6,20 @@ import Download from "./components/Download";
 import Navbar from "./components/Navbar";
 import Knowledge from "./components/Knowledge";
 import Features from "./components/Features";
+import Video from "./components/Video";
+import FAQ from "./components/FAQ";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+        <Navbar />
       <div className="container">
         <Landing />
         <Download />
         <Knowledge />
-        <Features/>
+        <Features />
+        <Video/>
+        <FAQ/>
       </div>
     </>
   );
