@@ -1,43 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/FAQ.css";
-import Accordion from "./custom/Accordian";
+import { accordionDataOne, accordionDataTwo } from "../data/faqData";
 
-export const accordionData = [
-  {
-    title: 'Section 1',
-    content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-    laborum cupiditate possimus labore, hic temporibus velit dicta earum
-    suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-    voluptatem.`
-  },
-  {
-    title: 'Section 2',
-    content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
-    reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
-    quaerat iure quos dolorum accusantium ducimus in illum vero commodi
-    pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
-    quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-    Repudiandae, mollitia id reprehenderit a ab odit!`
-  },
-  {
-    title: 'Section 3',
-    content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-    quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-    dolor ut sequi minus iste? Quas?`
-  }
-];
+const FAQ = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndexTwo, setActiveIndexTwo] = useState(null);
 
-export default function FAQ() {
+  const handleToggle = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+  const handleToggleTwo = (index) => {
+    setActiveIndexTwo(activeIndexTwo === index ? null : index);
+  };
+
   return (
-    <section>
- 
-      <div className="accordion">
-        {accordionData.map(({ title, content }) => (
-          
-          <Accordion title={title} content={content} />
-        ))}
+    <div className="accordion flex justify-around">
+      <div>
+      {accordionDataOne.map((item, index) => (
+        <div key={index} className="accordionItem">
+          <div
+            className={`accordionTitle ${activeIndex === index ? "active" : ""}`}
+            onClick={() => handleToggle(index)}
+          >
+            {item.title}
+            <span className="arrow">{activeIndex === index ? "▲" : "▼"}</span>
+          </div>
+          {activeIndex === index && (
+            <div className="accordionContent">{item.content}</div>
+          )}
+        </div>
+      ))}
       </div>
-
-    </section>
+<div>
+{accordionDataTwo.map((item, index) => (
+        <div key={index} className="accordionItem">
+          <div
+            className={`accordionTitle ${activeIndexTwo === index ? "active" : ""}`}
+            onClick={() => handleToggleTwo(index)}
+          >
+            {item.title}
+            <span className="arrow">{activeIndexTwo === index ? "▲" : "▼"}</span>
+          </div>
+          {activeIndexTwo === index && (
+            <div className="accordionContent">{item.content}</div>
+          )}
+        </div>
+      ))}
+</div>
+    </div>
   );
-}
+};
+
+export default FAQ;

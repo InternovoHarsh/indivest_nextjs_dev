@@ -17,32 +17,32 @@
   font-size: 4rem;
   font-weight: bold;
   display: flex;
-  align-items: flex-end; /* Align number to the bottom */
+  align-items: flex-end; 
 }
 
 .feature-text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align title and description at the top */
+  justify-content: flex-start; 
 }
 
 .feature-title {
   font-size: 2.5rem;
   margin: 0;
   display: flex;
-  align-items: flex-end; /* Align title to the bottom */
+  align-items: flex-end; 
 }
 
 .feature-description {
   font-size: 1rem;
   color: #333;
-  margin-top: 0.5rem; /* Add space between title and description */
+  margin-top: 0.5rem; 
 }
 
 .feature-image {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align image to the start */
+  align-items: flex-start;
 }
 
 .feature-image img {
@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 768px) {
   .feature-grid {
-    grid-template-columns: 1fr; /* Single column for mobile */
+    grid-template-columns: 1fr; 
     grid-template-rows: auto auto auto;
   }
 
@@ -73,16 +73,103 @@
   <title>Indiplay Section</title>
 </head>
 <body>
-  <div class="feature-grid">
-    <div class="feature-number">03</div>
-    <div class="feature-text">
-      <h2 class="feature-title">Personalised Service</h2>
-      <p class="feature-description">A dedicated Indivest Executive will support you through the investment journey to help you make informed financial decisions.</p>
+
+  <div class="GetKnow-inner-container">
+    <div class="GetKnow-tags col-lg-3 col-md-4" id="mob-hide-list">
+        <ul>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4')"
+                data-language="english" class="active">
+                <div class="video-preview col-5">
+                    <img src="./assets/img/first.jpg" alt="about indivest">
+                </div>
+                <div class="video-text">
+                    <p class="title">About Indivest </p>
+                    <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;1:15</p>
+                </div>
+            </li>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+HINDI.mp4')"
+                data-language="hindi" class="active none">About Indivest </li>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/10.+Final+Virtual+Portfolio+-+English.mp4')"
+                data-language="english">
+                <div class="video-preview col-5">
+                    <img src="./assets/img/second.jpg" alt="virtual portfolio">
+                </div>
+                <div class="video-text">
+                    <p class="title">Virtual Portfolio </p>
+                    <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;0.35</p>
+                </div>
+            </li>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/10.+Final+Virtual+Portfolio+-+Hindi.mp4')"
+                data-language="hindi" class="none"> Virtual Portfolio</li>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/5.+Final+Why+Invest+-+English.mp4')"
+                data-language="english">
+                <div class="video-preview col-5">
+                    <img src="./assets/img/third.jpg" alt="Why Indivest">
+                </div>
+                <div class="video-text">
+                    <p class="title">Why Indivest </p>
+                    <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;0.46</p>
+                </div>
+            </li>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/5.+Final+Why+Invest+-+Hindi.mp4')"
+                data-language="hindi" class="none"> Why Invest</li>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/7.+Final+Where+to+Invest+-+English.mp4')"
+                data-language="english">
+                <div class="video-preview col-5">
+                    <img src="./assets/img/fourth.jpg" alt="Where to Invest">
+                </div>
+                <div class="video-text">
+                    <p class="title">Where to Invest</p>
+                    <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;0.43</p>
+                </div>
+            </li>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/7.+Final+Where+to+Invest+-+Hindi.mp4')"
+                data-language="hindi" class="none"> Where to Invest</li>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/2.+Final+Compounding+-+English.mp4')"
+                data-language="english">
+                <div class="video-preview col-5">
+                    <img src="./assets/img/fifth.jpg" alt="Compounding">
+                </div>
+                <div class="video-text">
+                    <p class="title">Compounding</p>
+                    <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;0.54</p>
+                </div>
+            </li>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/2.+Final+Compounding+-+Hindi.mp4')"
+                data-language="hindi" class="none">Compounding</li>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/3.+Final+Goals+-+English.mp4')"
+                data-language="english" id="goal">
+                <div class="video-preview col-5">
+                    <img src="./assets/img/sixth.jpg" alt="Goal">
+                </div>
+                <div class="video-text">
+                    <p class="title">Goal</p>
+                    <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;0.42</p>
+                </div>
+            </li>
+            <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/3.+Final+Goals+-+Hindi.mp4')"
+                data-language="hindi" class="none">Goals</li>
+        </ul>
+
+        <div class="down-icon" onclick="scrollToBottom()">
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
     </div>
-    <div class="feature-image">
-      <img src="path/to/your/image.png" alt="Service Image">
+    <div class="GetKnow-tags-img col-lg-8 col-md-8">
+        <video loop="" id="dynamicVideo" controls="false" autoplay="false"
+            src="https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4"
+            poster="./assets/img/preview.jpg">
+            <source
+                src="https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <select id="languageSelector" onchange="changeLang()">
+            <option value="english" class="option-value">English</option>
+            <option value="hindi" class="option-value">Hindi</option>
+        </select>
     </div>
-  </div>
+</div>
   
   
 </body>

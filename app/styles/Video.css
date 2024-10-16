@@ -1,59 +1,168 @@
+.videoSection {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+
+}
+
 .featureHeadText {
-    color: #ff7a00;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  text-align: center;
+  font-size: 3rem;
+  margin: 3rem;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+.tabContainer {
+  max-height:400px; 
+  overflow-y: scroll; 
+ 
+}
+
+/* Hide scrollbar for Webkit-based browsers (Chrome, Safari) */
+.tabContainer::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.tabContainer {
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+.tabContainer {
+  -ms-overflow-style: none; /* Hide scrollbar */
+}
+
+.tabBox {
+  margin: 1rem;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.tabBox:hover {
+  transform: translateY(-5px);
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tabBox.active {
+  border: 2px solid #64a47c;
+  background-color: #e6fff4;
+}
+
+.tabThumbnail {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.tabDetails {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.tabTitle {
+  font-weight: 800;
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.tabDuration {
+  font-size: 0.85rem;
+  color: #888888;
+}
+
+
+
+
+.videoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 800px;
+  height: auto;
+}
+
+.videoPlayer {
+  position: absolute;
+  border: 2px solid #e0e0e0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:auto;
+  border-radius: 10px;
+
+}
+
+.languageBox{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border-radius: 20px;
+  outline: none;
+  padding: 3px;
+  font-size: 0.8rem;
+  background: #fff;
+  border: 2px solid #f3f3f3;
+  cursor: pointer;
+  color: black;
+  z-index: 10;
+}
+select:focus {
+  outline: none; /* Remove outline on focus */
+  
+}
+
+
+@media (max-width: 1024px) {
+  .videoPlayer {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
   }
 
-  
-  .videoBox {
-    width: 800px;
-    height: 400px;
-    background-color: grey;
-    display: flex;
-    gap: 1px;
-    transition: all 0.5s ease; /* Smooth transition */
+  .tabContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .videoBox.active {
 
-    gap: 0px;
+  .tabBox {
+    width: 45%;
+  }
 
+  .videoPlayer {
+    max-width: 500px;
   }
-  
-  .video {
-    position: relative;
-    flex-grow: 1; /* All videos start with equal space */
-    flex-basis: 0; /* Ensure equal distribution of space */
-    background-color: #ccc;
-    cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition */
+}
+
+@media (max-width: 480px) {
+  .tabBox {
+    width: 100%;
   }
-  
-  .video.active {
-    flex-grow: 9999; /* Active video expands to take up all available space */
+
+  .videoPlayer {
+    max-width: 300px;
   }
-  
-  .video:not(.active) {
-    flex-grow: 1; /* Non-active videos shrink, but remain visible */
-  }
-  
-  /* Dropdown styling */
-  .dropdown {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 10; /* Ensure the dropdown appears above other elements */
-    background-color: white;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-  .dropdown select {
-    padding: 5px;
-    font-size: 1rem;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    cursor: pointer;
-  }
-  
+}

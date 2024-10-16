@@ -8,6 +8,7 @@ import Knowledge from "./components/Knowledge";
 import Features from "./components/Features";
 import Video from "./components/Video";
 import FAQ from "./components/FAQ";
+import Documents from "./components/Documents";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Features />
         <Video/>
         <FAQ/>
+        <Documents/>
       </div>
     </>
   );
