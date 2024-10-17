@@ -1,36 +1,64 @@
+.accordion{
+
+margin: 4rem auto;
+}
+
+.faq-header {
+  color: #FF7A00;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .accordion {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.faq-header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+
 }
 
 .accordionItem {
-  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+  width: 500px;
+  padding: 20px 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .accordionTitle {
-  background-color: #f1f1f1;
-  padding: 15px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-.accordionTitle.active {
-  background-color: #e0e0e0;
+.accordionTitle p {
+  margin: 0;
 }
 
 .accordionContent {
-  padding: 15px;
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-  font-size: 16px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
 }
 
-.arrow {
-  font-size: 18px;
+.accordion .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
 }

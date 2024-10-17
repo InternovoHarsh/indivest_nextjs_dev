@@ -85,6 +85,7 @@ export default function Home() {
       {/* <Navbar /> */}
       <main className="landing">
         <h1 className="title">Decode the Language of &nbsp;Investing!!</h1>
+
         <div className={`avatar-container`} ref={turnBgGreen}>
           <img src="/Group8.png" alt="Avatar" className="avatar" />
           <div className="avatar-smile" ref={smileRef}>
@@ -107,6 +108,7 @@ export default function Home() {
           </div>
         </div>
         <button className="button">Get Started</button>
+
       </main>
     </>
   );

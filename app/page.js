@@ -9,6 +9,8 @@ import Features from "./components/Features";
 import Video from "./components/Video";
 import FAQ from "./components/FAQ";
 import Documents from "./components/Documents";
+import ExploreProducts from "./components/ExploreProducts";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
         <Video/>
         <FAQ/>
         <Documents/>
+        <ExploreProducts/>
+        <Footer/>
       </div>
     </>
   );

@@ -1,0 +1,38 @@
+.document{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+.docLeft {
+    width: 390px;
+}
+
+.docLeft p {
+    color: #3B3838;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.docLeft button {
+    border-radius: 35px;
+    background: #FF7A00;
+    width: 100%;
+    color: #FBFAF8;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.docRight {
+    /* width: 398px;
+    height: 335px; */
+    transform: rotate(-9.984deg);
+}
+
