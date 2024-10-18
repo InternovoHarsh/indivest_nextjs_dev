@@ -1,110 +1,111 @@
 .footer {
-    background: linear-gradient(0deg, #FDEED6 0%, rgba(254, 245, 232, 0.57) 50%, rgba(255, 255, 255, 0.00) 100%);
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .footerHeadTitle {
-    font-size: 2rem;
-    color: #ff7900;
-    margin: 3rem;
-    font-weight: bold;
-  }
-  
-  .footerBox {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-  
-  .footerLeft {
-    flex: 1/4;
-    text-align: left;
-  }
-  
-  .footerAddress, .footerEmail {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .footerAddress span, .footerEmail span {
-    margin-right: 10px;
-  }
-  
-  .footerSocials {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .footerSocials a img {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-  }
-  
-  .footerRight {
-    flex: 1;
-    max-width: 500px;
-  }
-  
-  .inputWrapper {
-    margin-bottom: 15px;
-  }
-  
-  .inputField, .textAreaField {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 25px;
-    background: transparent;
-    font-size: 1rem;
-  }
-  
-  .inputField {
-color: #000;
-  }
-  
-  .textAreaField {
-    height: 100px;
-    border-radius: 15px;
-  }
-  
-  .submitWrapper {
-    text-align: center;
-  }
-  
-  .submitButton {
-    border-radius: 35px;
-    background: #008C00;
-    color: white;
-    padding: 10px 40px;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submitButton:hover {
-    background-color: #17a322;
-  }
-  
-  .footerPrivacy {
-    margin-top: 30px;
-  }
-  
-  .privacyLink {
-    color: #6a5af9;
-    text-decoration: none;
-    font-size: 0.875rem;
-  }
-  
-  .privacyLink:hover {
-    text-decoration: underline;
-  }
-  
+  background: linear-gradient(0deg, #FDEED6 0%, rgba(254, 245, 232, 0.57) 50%, rgba(255, 255, 255, 0.00) 100%);
+  padding: 40px;
+  text-align: center;
+}
+
+.footerHeadTitle {
+  color: #ff7a00;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 3rem auto;
+}
+
+.footerBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.footerLeft {
+  max-width: 400px;
+  text-align: left;
+}
+
+.footerAddress,
+.footerEmail {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footerAddress span,
+.footerEmail span {
+  margin-right: 10px;
+}
+
+.footerSocials {
+  display: flex;
+  gap: 10px;
+}
+
+.footerSocials a img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.footerRight {
+  width: 100%;
+  max-width: 500px;
+}
+
+.inputWrapper {
+  margin-bottom: 15px;
+}
+
+.inputField,
+.textAreaField {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  background: transparent;
+  font-size: 1rem;
+}
+
+
+.textAreaField {
+  height: 100px;
+  border-radius: 15px;
+}
+
+.submitWrapper {
+  text-align: center;
+}
+
+.submitButton {
+  border-radius: 35px;
+  background: #008C00;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #17a322;
+}
+
+.footerPrivacy {
+  margin-top: 30px;
+}
+
+.privacyLink {
+  color: #6a5af9;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.privacyLink:hover {
+  text-decoration: underline;
+}

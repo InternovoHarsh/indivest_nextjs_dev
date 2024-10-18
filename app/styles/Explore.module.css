@@ -1,0 +1,15 @@
+.exploreHeadText{
+    color: #ff7a00;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.exploreImgContainer{
+    position:relative;
+    width: 600px;
+    height: 75vh;
+    margin:3rem auto;
+
+}

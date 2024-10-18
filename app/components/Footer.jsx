@@ -1,5 +1,6 @@
 import React from "react";
 import s from "../styles/Footer.module.css";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className={s.footerLeft}>
           <a className={s.footerAddress}>
             <span>
-              <img src="/button/address.svg" alt="Instagram" />
+              {/* <Image src="/button/address.svg" alt="Instagram" width="30px" height="30px"/> */}
             </span>
             Unit No 521-522, 5th Floor, IJMIMA Complex, Off Link Road, Malad
             West, Mumbai 400064

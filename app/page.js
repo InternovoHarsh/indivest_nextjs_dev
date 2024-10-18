@@ -15,17 +15,17 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
-        <Navbar />
+      <Navbar />
       <div className="container">
         <Landing />
         <Download />
         <Knowledge />
         <Features />
-        <Video/>
-        <FAQ/>
-        <Documents/>
-        <ExploreProducts/>
-        <Footer/>
+        <Video />
+        <FAQ />
+        <Documents />
+        <ExploreProducts />
+        <Footer />
       </div>
     </>
   );

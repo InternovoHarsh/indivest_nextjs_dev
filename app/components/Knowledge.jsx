@@ -1,16 +1,17 @@
 "use client"
 import React from 'react'
-import "../styles/Knowledge.css"
+import s from "../styles/Knowledge.module.css"
 import Image from 'next/image'
+
 
 const Knowledge = () => {
   return (
-    <section>
-        <div className="knowlegdeHead">
+    <section className={s.knowledgeContainer}>
+        <div className={s.knowlegdeHead}>
             Knowledge Partner
         </div>
-        <div className="knowledgeLogo">
-          <div className="imgContainer">
+        <div className = {s.knowledgeLogo}>
+          <div className={s.imgContainer}>
           <Image
               src="/AxisMFLogo.svg"
               alt="Indivest Axis Mutual Fund Logo"
